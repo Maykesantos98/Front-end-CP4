@@ -1,0 +1,22 @@
+
+.grade-produtos, aside {
+  width: auto;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+ 
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; 
+    align-items: center;
+  }
+  aside {
+    width: 100%;   
+    margin-bottom: 20px; 
+  }
+}

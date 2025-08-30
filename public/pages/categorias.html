@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <title>EcoTrend - Home</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/categorias.css">
+
+</head>
+
+<body>
+    <script src="../js/script.js"></script>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success fs-3" href="#">EcoTrend</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="./categorias.html">Produtos</a></li>
+
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="./contato.html">Contato</a></li>
+                        <li class="nav-item ms-3">
+                            <a class="btn btn-success position-relative" href="./carrinho.html">
+                                <i class="bi bi-cart-fill"></i> Carrinho
+                                <span id="carrinho-contador"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div style="height: 80px;"></div>
+
+    <main class="container-fluid my-4">
+        <div class="row">
+            <aside class="col-md-3 col-lg-2 mb-4 col-filtros">
+                <div class="card p-3 shadow-sm">
+                    <h5 class="mb-3">Filtros</h5>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Preço</label>
+                        <input type="range" class="form-range" min="0" max="500" step="10">
+                        <small>Até R$ 500</small>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Categoria</label>
+                        <select class="form-select">
+                            <option value="">Todos</option>
+                            <option>Beleza</option>
+                            <option>Roupas</option>
+                            <option>Acessórios</option>
+                            <option>Utilidades</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label fw-bold">Marca</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca1">
+                            <label class="form-check-label" for="marca1">EcoTrend</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca2">
+                            <label class="form-check-label" for="marca2">BioLife</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="marca3">
+                            <label class="form-check-label" for="marca3">GreenStyle</label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-success w-100 btn-aplicar-filtros">Aplicar Filtros</button>
+                </div>
+            </aside>
+
+            <main class="col-md-9 col-lg-10">
+                <h2 class="text-center fw-bold mb-5">🌿 Produtos Sustentáveis</h2>
+
+                <h3 class="titulo-categoria">Beleza</h3>
+                <br>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Beleza" data-marca="BioLife"
+                        data-preco="45">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/bastão hisdratante-biobio.png" class="card-img-top"
+                                alt="Produto Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Bastão Hidratante</h5>
+                                <p class="card-text text-muted">Feito com ingredientes naturais</p>
+                                <p class="fw-bold text-success fs-5">R$ 45,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="1"
+                                    data-product-name="Bastão Hidratante" data-product-price="45.00"
+                                    data-product-image="../img/bastão hisdratante-biobio.png"><i
+                                        class="bi bi-cart-plus"></i> Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Beleza" data-marca="BioLife"
+                        data-preco="35">
+
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/esfoliante-manga.png" class="card-img-top" alt="Produto Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Esfoliante de Manga</h5>
+                                <p class="card-text text-muted">Livre de químicos nocivos</p>
+                                <p class="fw-bold text-success fs-5">R$ 35,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="2"
+                                    data-product-name="Esfoliante de Manga" data-product-price="35.00"
+                                    data-product-image="../img/esfoliante-manga.png"><i class="bi bi-cart-plus"></i>
+                                    Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Beleza" data-marca="EcoTrend"
+                        data-preco="60">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/vitaminab12.png" class="card-img-top" alt="Produto Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Vitamina B12</h5>
+                                <p class="card-text text-muted">Suplemento vegano</p>
+                                <p class="fw-bold text-success fs-5">R$ 60,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="3"
+                                    data-product-name="Vitamina B12" data-product-price="60.00"
+                                    data-product-image="../img/vitaminab12.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Beleza" data-marca="GreenStyle"
+                        data-preco="100">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/Duo Firmeza e Equilíbrio.png" class="card-img-top"
+                                alt="Produto Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Kit Equilíbrio</h5>
+                                <p class="card-text text-muted">Cuidados pessoais naturais</p>
+                                <p class="fw-bold text-success fs-5">R$ 100,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="4"
+                                    data-product-name="Kit Equilíbrio" data-product-price="100.00"
+                                    data-product-image="../img/Duo Firmeza e Equilíbrio.png"><i
+                                        class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <h3 class="titulo-categoria">Roupas</h3>
+                <br>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Roupas" data-marca="EcoTrend"
+                        data-preco="79.9">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/camiseta-algodao.png" class="card-img-top" alt="Camiseta Orgânica">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camiseta de Algodão Orgânico</h5>
+                                <p class="card-text text-muted">Confortável e ecológica</p>
+                                <p class="fw-bold text-success fs-5">R$ 79,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="5"
+                                    data-product-name="Camiseta de Algodão Orgânico" data-product-price="79.90"
+                                    data-product-image="../img/camiseta-algodao.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Roupas" data-marca="GreenStyle"
+                        data-preco="199">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/jaqueta.png" class="card-img-top" alt="Jaqueta Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Jaqueta Sustentável</h5>
+                                <p class="card-text text-muted">Feita de garrafas PET recicladas</p>
+                                <p class="fw-bold text-success fs-5">R$ 199,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="6"
+                                    data-product-name="Jaqueta Sustentável" data-product-price="199.00"
+                                    data-product-image="../img/jaqueta.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Roupas" data-marca="EcoTrend"
+                        data-preco="249.9">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/tenis.png" class="card-img-top" alt="Tênis Vegano">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Tênis Vegano</h5>
+                                <p class="card-text text-muted">Produzido sem couro animal</p>
+                                <p class="fw-bold text-success fs-5">R$ 249,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="7"
+                                    data-product-name="Tênis Vegano" data-product-price="249.90"
+                                    data-product-image="../img/tenis.png"><i class="bi bi-cart-plus"></i> Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Roupas" data-marca="BioLife"
+                        data-preco="249.9">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/camisa-leve.png" class="card-img-top" alt="Camisa leve">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Camisa Leve</h5>
+                                <p class="card-text text-muted">Produzido sem maus tratos a natureza</p>
+                                <p class="fw-bold text-success fs-5">R$ 249,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="8"
+                                    data-product-name="Camisa Leve" data-product-price="249.90"
+                                    data-product-image="../img/camisa-leve.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <h3 class="titulo-categoria">Acessórios</h3>
+                <br>
+                <div class="row g-4 align-items-stretch">
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Acessórios" data-marca="EcoTrend"
+                        data-preco="120">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/oculos-bambu.png" class="card-img-top" alt="Óculos de Bambu">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Óculos de Sol de Bambu</h5>
+                                <p class="card-text text-muted">Durável e biodegradável</p>
+                                <p class="fw-bold text-success fs-5">R$ 120,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="9"
+                                    data-product-name="Óculos de Sol de Bambu" data-product-price="120.00"
+                                    data-product-image="../img/oculos-bambu.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Acessórios" data-marca="GreenStyle"
+                        data-preco="89.9">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/mochila.png" class="card-img-top" alt="Bolsa Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Bolsa de Tecido Reciclado</h5>
+                                <p class="card-text text-muted">Ideal para o dia a dia</p>
+                                <p class="fw-bold text-success fs-5">R$ 89,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="10"
+                                    data-product-name="Bolsa de Tecido Reciclado" data-product-price="89.90"
+                                    data-product-image="../img/mochila.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Acessórios" data-marca="EcoTrend"
+                        data-preco="89.9">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/ecobag.png" class="card-img-top" alt="Bolsa Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">EcoBag Tecido de algodão</h5>
+                                <p class="card-text text-muted">Ideal para o dia a dia</p>
+                                <p class="fw-bold text-success fs-5">R$ 89,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="11"
+                                    data-product-name="EcoBag Tecido de algodão" data-product-price="89.90"
+                                    data-product-image="../img/ecobag.png"><i class="bi bi-cart-plus"></i> Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Acessórios" data-marca="BioLife"
+                        data-preco="150">
+                        <div class="card h-100 shadow-sm">
+                            <img src="../img/relogio.png" class="card-img-top" alt="Relógio Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Relógio de Madeira Sustentável</h5>
+                                <p class="card-text text-muted">Design elegante e eco-friendly</p>
+                                <p class="fw-bold text-success fs-5">R$ 150,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="12"
+                                    data-product-name="Relógio de Madeira Sustentável" data-product-price="150.00"
+                                    data-product-image="../img/relogio.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+                <h3 class="titulo-categoria">Utilidades para Casa</h3>
+                <br>
+                <div class="row g-4 align-items-stretch">
+<div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Utilidades" data-marca="EcoTrend" data-preco="39.9">                        <div class="card h-100 shadow-sm">
+                            <img src="../img/talheres-bambu.png" class="card-img-top" alt="Kit de Talheres">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Kit de Talheres de Bambu</h5>
+                                <p class="card-text text-muted">Perfeito para refeições sustentáveis</p>
+                                <p class="fw-bold text-success fs-5">R$ 39,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="13"
+                                    data-product-name="Kit de Talheres de Bambu" data-product-price="39.90"
+                                    data-product-image="../img/talheres-bambu.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Utilidades" data-marca="GreenStyle" data-preco="20.9">                        <div class="card h-100 shadow-sm">
+                            <img src="../img/copo-retratil.png" class="card-img-top" alt="copo retratil">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Copo retratil</h5>
+                                <p class="card-text text-muted">Perfeito para levar para passeios</p>
+                                <p class="fw-bold text-success fs-5">R$ 20,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="14"
+                                    data-product-name="Copo retratil" data-product-price="20.90"
+                                    data-product-image="../img/copo-retratil.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Utilidades" data-marca="BioLife" data-preco="59.9">                        <div class="card h-100 shadow-sm">
+                            <img src="../img/garrafa.png" class="card-img-top" alt="Garrafa Sustentável">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Garrafa Reutilizável</h5>
+                                <p class="card-text text-muted">Feita de aço inoxidável</p>
+                                <p class="fw-bold text-success fs-5">R$ 59,90</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="15"
+                                    data-product-name="Garrafa Reutilizável" data-product-price="59.90"
+                                    data-product-image="../img/garrafa.png"><i class="bi bi-cart-plus"></i>
+                                    Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+
+<div class="col-sm-6 col-md-4 col-lg-3 produto" data-categoria="Utilidades" data-marca="EcoTrend" data-preco="12">                        <div class="card h-100 shadow-sm">
+                            <img src="../img/bucha.png" class="card-img-top" alt="Esponja Vegetal">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Esponja Vegetal</h5>
+                                <p class="card-text text-muted">100% biodegradável</p>
+                                <p class="fw-bold text-success fs-5">R$ 12,00</p>
+                                <a href="#" class="btn btn-success w-100 adicionar-carrinho" data-product-id="16"
+                                    data-product-name="Esponja Vegetal" data-product-price="12.00"
+                                    data-product-image="../img/bucha.png"><i class="bi bi-cart-plus"></i> Adicionar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

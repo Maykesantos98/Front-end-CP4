@@ -1,0 +1,191 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #2e7d32 !important; 
+}
+
+.nav-link {
+    margin-left: 15px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #2e7d32 !important;
+}
+
+.btn-success {
+    background-color: #2e7d32;
+    border: none;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #256628;
+}
+
+
+.banner img {
+    object-fit: cover;
+    height: 400px;
+}
+
+h2 {
+    font-weight: 700;
+    color: #2e7d32;
+}
+
+
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  -webkit-transition: transform 0.3s, box-shadow 0.3s;
+  -moz-transition: transform 0.3s, box-shadow 0.3s;
+  -ms-transition: transform 0.3s, box-shadow 0.3s;
+  -o-transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.card img {
+  height: 160px; 
+  object-fit: contain; 
+  padding: 10px;
+}
+
+.card-body {
+  padding: 0.8rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+
+.card-text {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.card .fs-5 {
+  font-size: 1rem !important;
+  margin-bottom: 0.6rem;
+}
+
+.card .btn {
+  font-size: 0.85rem;
+  padding: 0.35rem 0.75rem;
+}
+
+.card:hover {
+  border-bottom: 1px solid #256628;
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+
+.sobre-nos {
+    background-color: #e8f5e9;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 40px auto;
+}
+
+
+footer {
+    background: #1b1b1b;
+    color: #f1f1f1;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cx-redes{
+  display: flex;
+  width: 70%;
+  text-align: center;
+  justify-content: space-around;
+}
+.col-1{
+grid-column: 1/2;
+text-align: center;
+}
+.col-2{
+  grid-column: 2/3;
+  text-align: center;
+}
+.titulo-categoria{
+  color: #256628;
+  text-align: center;
+    font-weight: 500 !important;
+
+}
+.caixa-preco-carrinho{
+  display: flex;
+  flex-direction: row;
+}
+.preco{
+  width: 50%;
+}
+.carrinho{
+  width: 50%;
+}
+
+.grade-produtos{
+}
+
+.caixa-produto{
+    max-height: 150px !important;
+
+}
+
+
+.leaf {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-image: url('../img/folha.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  animation: floatLeaf 2s linear forwards;
+  opacity: 0.8;
+  -webkit-animation: floatLeaf 2s linear forwards;
+}
+
+@keyframes floatLeaf {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-50px) scale(0.6) rotate(45deg);
+    opacity: 0;
+    -webkit-transform: translateY(-50px) scale(0.6) rotate(45deg);
+    -moz-transform: translateY(-50px) scale(0.6) rotate(45deg);
+    -ms-transform: translateY(-50px) scale(0.6) rotate(45deg);
+    -o-transform: translateY(-50px) scale(0.6) rotate(45deg);
+}
+}
+@media (max-width: 576px) {
+  
+  .banner img {
+    height: 200px;
+  }
+}

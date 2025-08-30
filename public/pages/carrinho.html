@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras - EcoTrend</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+</head>
+
+<body>
+    <script src="../js/script.js"></script>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+            <div class="container">
+                <a class="navbar-brand fw-bold text-success fs-3" href="#">EcoTrend</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="menu" aria-expanded="false" aria-label="Menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="../../index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="./categorias.html">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link fw-semibold" href="./contato.html">Contato</a></li>
+                        <li class="nav-item ms-3">
+                            <a class="btn btn-success position-relative" href="./carrinho.html">
+                                <i class="bi bi-cart-fill"></i> Carrinho
+                                <span id="carrinho-contador"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div style="height: 80px;"></div>
+
+    <main class="container my-5">
+        <h2 class="text-center fw-bold mb-5">🛒 Seu Carrinho</h2>
+        <div class="row">
+            <div class="col-md-8">
+                <div id="lista-carrinho" class="list-group">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card shadow-sm p-4">
+                    <h5 class="card-title">Resumo do Pedido</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Subtotal: <span id="subtotal">R$ 0.00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            Entrega: <span id="entrega">Grátis</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center fw-bold">
+                            Total: <span id="total-final">R$ 0.00</span>
+                        </li>
+                    </ul>
+                    <button id="btn-finalizar" class="btn btn-success mt-3 w-100"><i
+                            class="bi bi-bag-check-fill me-2"></i>Finalizar Compra</button>
+                    <a href="./categorias.html" class="btn btn-outline-secondary mt-2 w-100">Continuar Comprando</a>
+                    <button id="btn-excluir" class="btn btn-danger mt-3 w-100">
+                        <i class="bi bi-trash me-2"></i> Limpar carrinho
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>EcoTrend</h5>
+                    <p>Produtos sustentáveis para um futuro melhor</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contato</h5>
+                    <p>Email: ecotrend@gmail.com</p>
+                    <p>WhatsApp: (11) 90000-0000</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Siga-nos</h5>
+                    <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+            <hr class="border-light">
+            <p class="text-center">&copy; 2025 EcoTrend - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
